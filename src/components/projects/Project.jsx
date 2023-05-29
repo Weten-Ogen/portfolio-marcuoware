@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-const Project = (props) => {
+export const Project = (props) => {
   const{title,stack,image} = props.item
 
   return (
