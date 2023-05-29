@@ -359,13 +359,12 @@ html{
   bg-slate-800
   shadow-md
   shadow-shadowColor
-  p-8
-  my-[10rem]
+  p-5
+  my-[15rem]
 }
 .skillscontainer{
   @apply
   text-lg
-  
 }
 
 .skillheader{
@@ -391,8 +390,7 @@ html{
    md:grid-cols-2
    lg:grid-cols-3
    gap-2
-   lg:h-screen
-   py-12
+   py-14
    
   }
 
