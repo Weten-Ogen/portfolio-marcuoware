@@ -1,15 +1,19 @@
+
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { About,Main,Skills,Projects,Contact } from '../src/components'
 
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+export default function Home(props) {
+ 
   return (
     <main className="">
-   
-   
-     
+        <Main/>
+        <About/>
+        <Skills />
+        <Projects/>
+        <Contact/>
+        
     </main>
   )
 }
+

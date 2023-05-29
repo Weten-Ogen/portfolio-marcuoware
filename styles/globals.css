@@ -2,14 +2,796 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+html{
+  scroll-behavior:smooth;
+  
+}
+
+:root{
+  --b--width: 50%;
+}
+
+@layer base{
+  body{
+
+    margin:0;
+    @apply
+    ease-in
+    duration-500
+    bg-primaryBg
+    text-textColor
+  }
+}
+
+/* ********NAVBAR****** */
+.nav{
+  @apply
+  shadow
+  shadow-shadowColor
+  flex
+  justify-between
+  items-center
+  px-9
+  py-4
+  z-[100]
+}
+.noshadownav{
+  @apply
+  flex
+  justify-between
+  items-center
+  px-9
+  py-4
+  z-[100]
+}
+
+.logo{
+  @apply
+  tracking-[0.2rem]
+  uppercase
+  text-btnColor
+  font-bold
+  text-2xl
+}
+
+.navul{
+  @apply
+  flex
+  items-center
+  gap-4
+  text-textColor
+}
+.navli{
+  @apply
+  text-xl
+  uppercase
+  tracking-widest
+  md:block
+  font-normal
+  hover:-translate-y-0.5
+  hover:border-b
+  hover:border-b-btnColor
+  ease-in
+  duration-100
+  hidden
+  cursor-pointer
+}
+  
+
+.navicon{
+  @apply
+  text-2xl
+  block
+  md:hidden
 }
 
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* **************SIDEBAR******** */
+.sidebar{
+  @apply
+  fixed
+  top-0
+  left-0
+  w-full
+  h-screen
+  bg-black/70
+  z-50
+}
+
+.sidebarcontainer{
+  @apply
+  fixed
+  left-0
+  top-0
+  w-[75%]
+  sm:w-[35%]
+  h-screen
+  bg-primaryBg
+  p-4
+}
+.sideheaddiv{
+  @apply
+  flex
+  items-center
+  justify-between
+  text-btnColor
+}
+.sidelogo{
+  @apply
+  text-2xl
+  uppercase
+}
+
+.sideheadicon{
+  @apply
+  text-2xl
+  shadow
+  ease-in
+  duration-300
+  transition
+  hover:opacity-80
+  hover:scale-x-105
+  shadow-shadowColor
+  p-2
+  rounded-full
+  cursor-pointer
+}
+.sideul{
+  @apply
+  text-xl
+  uppercase
+  tracking-widest
+  py-4
+  object-contain
+  pr-2
+}
+.sideli{
+  @apply
+  py-3
+  my-4
+  ease-in
+  duration-300
+  text-textColor
+  transform
+  hover:scale-105
+  font-bold
+  shadow-shadowColor
+  shadow-md
+  outline-none
+  px-2
+  
+}
+.sideaside{
+  @apply
+  text-textColor
+  text-xl
+  mt-16
+
+}
+.asidehead{
+  @apply
+  uppercase
+  tracking-[0.2rem]
+}
+.asideicondiv{
+  @apply
+  flex
+  py-3
+  items-center
+  gap-4
+}
+.asideicon{
+  @apply
+  bg-black
+  rounded-full
+  p-2
+  shadow-shadowColor
+  shadow-md
+  text-2xl
+  cursor-pointer
+  ease-in
+  hover:scale-110
+  duration-300
+}
+
+/* *********** MAIN ************/
+.main{
+  @apply
+  my-[3rem]
+  flex
+  h-screen
+  items-center
+  justify-center
+}
+.maincontainer{
+  @apply
+  text-textColor
+  bg-slate-800
+  
+  shadow-md
+  shadow-shadowColor
+  
+}
+.mainheader{
+  @apply
+  text-xl
+  lg:text-3xl
+  capitalize
+  tracking-widest
+  my-2
+  text-center
+  font-bold
+}
+.mainsubheader{
+  @apply
+  tracking-[0.2rem]
+  text-center 
+  text-lg
+  font-bold 
+  uppercase
+  lg:text-2xl
+  lg:my-3
+  my-2
+}
+.mainptag{
+  @apply
+  tracking-widest
+  text-center
+  text-lg
+  lg:text-xl
+  max-w-[400px]
+  lg:max-w-[530px]
+  mx-auto
+  p-2
+  my-8
+}
+
+.mainicondiv{
+  @apply
+  flex
+  my-8
+  items-center
+  mx-auto
+  gap-6
+  lg:gap-16
+  justify-center
+}
+.mainicon{
+  @apply
+  bg-black
+  rounded-full
+  p-2
+  shadow-shadowColor
+  shadow-md
+  text-2xl
+  cursor-pointer
+  ease-in
+  hover:-translate-y-0.5
+  hover:opacity-90
+  duration-300
+}
+
+/* ************ABOUT ******* */
+.about{
+  @apply
+  w-full
+  lg:h-screen
+  my-60
+  bg-slate-800
+  shadow-md
+  
+  shadow-shadowColor
+}
+.aboutcontainer{
+  @apply
+  sm:p-4 
+  p-8
+}
+.aboutpdiv{
+  @apply
+  lg:grid
+  lg:grid-cols-2
+  gap-4
+}
+.aboutheader{
+  @apply
+  text-xl
+  tracking-[0.2rem]
+  text-btnColor
+  uppercase
+}
+.aboutsubhead{
+  @apply
+  text-4xl
+  lg:text-5xl
+  tracking-[0.2rem]
+  capitalize
+  font-bold
+}
+
+.aboutptag{
+  @apply
+  text-sm
+  leading-normal
+  tracking-wide
+  font-bold
+  text-left
+  md:tracking-wider
+  lg:leading-loose
+}
+
+.aboutimagediv{
+  @apply
+  object-contain
+  rounded-xl
+  w-full
+  md:block
+}
+.aboutimage{
+  @apply
+  object-cover
+  rounded-xl
+  shadow-md
+  shadow-shadowColor
+  w-full
+  md:max-h-[500px]
+  ease-in
+  duration-300
+  hover:opacity-70
+}
+
+.aboutlink{
+  @apply
+  underline
+  tracking-widest
+  text-btnColor
+  cursor-pointer
+  ease-in
+  my-4
+  duration-300
+  hover:scale-x-95
+}
+
+/* ********SKILLS******* */
+.skills{
+  @apply
+  w-full
+  bg-slate-800
+  shadow-md
+  shadow-shadowColor
+  p-8
+  my-[10rem]
+}
+.skillscontainer{
+  @apply
+  text-lg
+  
+}
+
+.skillheader{
+  @apply
+  text-btnColor
+  tracking-widest
+  uppercase
+  text-xl
+}
+.skillssubhead{
+  @apply
+  text-3xl
+  tracking-[0.2rem]
+  capitalize
+  py-2
+}
+
+
+.skill{
+  @apply
+   grid
+   grid-cols-1
+   md:grid-cols-2
+   lg:grid-cols-3
+   gap-2
+   lg:h-screen
+   py-12
+   
+  }
+
+.skillouterdiv{
+  @apply
+  p-2
+  rounded-xl
+  ease-in
+  duration-500
+  hover:scale-105
+  cursor-pointer
+}
+  
+.skillcontainer{
+  @apply 
+  shadow-shadowColor
+   shadow-lg
+   py-5
+}
+.skillimagediv{
+  @apply
+  p-2 
+}
+.skillimage{
+  @apply
+  object-center 
+  mx-auto
+  p-2
+}
+.skillptag{
+  @apply
+  text-xl
+  text-center
+  uppercase
+  tracking-[0.3rem]
+  font-bold
+}
+
+/* *********PROJECTS***** */
+.projects{
+  @apply
+  my-60
+  lg:h-screen
+  mx-auto
+  bg-primaryBg
+  shadow-md
+  shadow-shadowColor
+}
+
+.projectscontainer{
+  @apply
+  w-full
+  p-4
+  sm:p-8
+  
+}
+.projectsheader{
+  @apply
+  text-btnColor
+  text-lg
+  font-bold
+  tracking-widest
+  uppercase
+  pb-2
+}
+
+.projectssubhead{
+  @apply
+  text-3xl
+  capitalize
+  md:text-4xl
+  py-2
+  tracking-[0.3rem]
+}
+.project{
+  @apply
+  grid
+  pt-12
+  sm:pt-24
+  grid-cols-1
+  md:grid-cols-2
+  lg:grid-cols-3
+  gap-8
+  mb-3
+}
+
+.projecttag{
+  @apply
+  relative
+  rounded-lg
+  shadow-md
+  shadow-shadowColor
+  overflow-hidden
+  cursor-pointer
+  ease-in
+  duration-300
+  hover:scale-105
+  
+}
+.projectimagediv{
+  @apply
+  w-full
+  h-auto
+  object-contain
+  rounded-lg
+}
+.projectimage{
+  @apply
+  object-cover
+  w-full
+  h-auto  
+}
+.projectoverlay{
+  @apply
+  absolute
+  inset-0
+  w-full
+  h-full
+  hidden
+  group-hover:block
+  p-4
+  sm:p-8
+group-hover:bg-black/80
+
+}
+
+.projectoverlaydiv{
+  @apply
+  flex
+  flex-col
+  items-center
+  justify-center
+  my-auto
+}
+
+.projectname{
+  @apply
+  text-btnColor
+  text-xl
+  sm:text-2xl
+  capitalize
+  font-bold
+}
+
+.projectstack{
+  @apply
+  uppercase
+  text-sm
+  sm:tracking-normal
+  tracking-wide
+  my-1
+  sm:my-2
+}
+
+.projectlink{
+  @apply
+  my-2
+  outline-none
+  bg-black/90
+  px-4
+  py-2
+  shadow-md
+  shadow-shadowColor
+  text-sm
+  font-bold
+  uppercase
+}
+
+/* ********CONTACT ********/
+.contact{
+  @apply
+  my-[3rem]
+  w-full
+  }
+
+.formcontact{
+  @apply
+  grid
+  grid-cols-1
+  xl:grid-cols-2
+  gap-8
+  md:gap-4
+  lg:gap-8
+}
+
+.contactcontainer{
+  @apply
+  w-full
+  shadow-md
+  shadow-shadowColor
+  rounded-xl
+  bg-slate-800
+  p-8
+}
+.contactheader{
+  @apply
+  text-btnColor
+  uppercase
+  text-xl
+  tracking-widest
+}
+.contactsubhead{
+  @apply
+  text-3xl
+  capitalize
+  pb-2
+  tracking-[0.2rem]
+}
+.contactimagediv{
+  @apply
+  w-full
+  pt-12
+  mb-6
+}
+
+.contactimage{
+  @apply
+  w-full
+  object-cover
+  hover:opacity-75
+}
+
+.contactinfo{
+  @apply
+  py-1
+}
+.contactname{
+  @apply
+  capitalize
+  text-xl
+  font-bold
+  tracking-[0.2rem]
+}
+.contactstack{
+  @apply
+  text-sm
+  text-btnColor
+  tracking-widest
+  py-2
+  font-bold
+  uppercase
+}
+.contactptag{
+  @apply
+  py-2
+  text-sm
+  tracking-wide
+}
+
+.contacticondiv{
+  @apply
+  pt-16
+}
+.contacticonhead{
+  @apply
+  capitalize
+  text-2xl
+  tracking-[0.2rem]
+  font-bold
+}
+.contacticons{
+  @apply
+  flex
+  items-center
+  gap-4
+  text-2xl
+  my-3
+}
+
+.contacticon{
+  @apply
+  bg-black/80
+  shadow-md
+  shadow-shadowColor
+  rounded-full
+  hover:-translate-y-1
+  ease-in
+  hover:opacity-50
+  duration-75
+  p-2
+}
+
+/* *******FORM***** */
+.form{
+  @apply
+  pt-10
+  sm:pt-0
+  p-8
+  md:p-4
+  lg:p-8
+  w-full
+  shadow-md
+  bg-slate-800
+  shadow-shadowColor
+  rounded-lg
+}
+.input{
+  @apply
+  py-4
+  lg:py-3
+  rounded-lg
+  px-3
+  font-bold
+  grow
+}
+.label{
+  @apply
+  py-2
+  uppercase
+  text-lg
+  tracking-widest
+  font-bold
+
+}
+.containerone{
+  @apply
+  grid
+  grid-cols-1
+  lg:grid-cols-2
+  gap-8
+}
+.flexinput{
+  @apply
+  p-3
+  rounded-lg
+ 
+  font-bold
+  grow
+}
+.othercontainer{
+  @apply
+  flex 
+  flex-col
+  my-3
+}
+.message{
+  @apply
+  flex 
+  flex-col
+  pt-10
+  
+}
+.btn{
+  @apply
+  text-slate-900
+  outline-none
+  focus:ring
+  focus:ring-gray-400
+  hover:opacity-60
+  focus:opacity-100
+}
+.msglabel{
+  @apply
+  py-2
+  uppercase
+  text-lg
+  font-bold
+  tracking-widest
+}
+.msginput{
+  @apply
+  p-3
+  text-slate-900
+  rounded-lg
+}
+
+.formbtn{
+  @apply
+  p-2
+  mx-auto
+  bg-black
+  text-textColor
+  block
+  outline-none
+  mt-7
+  mb-3
+  uppercase
+  text-lg
+  font-bold
+  tracking-widest
+  transition
+  hover:opacity-75
+  hover:-translate-y-0.5
+  ease-in
+  duration-100
+  w-full
+  shadow-md
+  shadow-btnColor
+}
+
+
+.formicon{
+  @apply
+  p-3
+  text-5xl
+  rounded-full 
+}
+.formicondiv{
+  @apply
+  mx-auto
+  p-10
 }

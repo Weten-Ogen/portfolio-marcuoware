@@ -1,7 +1,9 @@
-import NavBar from './NavBar'
-import Hero from './Hero'
-import Project from './Project'
+import NavBar from './navbar/NavBar'
+import Main from './Main'
 import About from './About'
-import Porfolio from './Porfolio'
+import Projects from './projects/Projects'
+import Skills from './skills/Skills'
+import Contact from './Contact'
 
-export {NavBar,About, Hero ,Project,Porfolio}
+
+export {NavBar,About,Projects,Main,Skills,Contact};
