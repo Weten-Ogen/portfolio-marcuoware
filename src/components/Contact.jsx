@@ -25,9 +25,9 @@ export const Contact = () => {
           <div className='contactinfo '>
             <h2 className='contactname'>marcus oware</h2>
             <h3 className='contactstack'>a fullstack developer</h3>
-            <p className='contactptag'>I am available for remote fulltime or freelance positions.Contact me and let's talk</p>
+            <p className='contactptag'>I am available for remote fulltime or freelance positions.Contact me and let&apos;s talk</p>
             <div className='contacticondiv'>
-              <h4 className='contacticonhead'>contact me </h4>
+              <h4 className='contacticonhead'>contact me</h4>
               <div className='contacticons'>
               <Link href=''>
                 <div className='contacticon'>
@@ -58,7 +58,8 @@ export const Contact = () => {
        <div className='formicondiv'>
         <Link href=''>
             <div className='formicon'>
-              <HiOutlineChevronDoubleUp className=' bg-gray-900'/>
+              <HiOutlineChevronDoubleUp 
+              className=' bg-gray-900'/>
             </div>
           </Link>
        </div>
