@@ -3,11 +3,11 @@ import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsFillPersonLinesFill,BsMoonStarsFill,BsMoonStars } from 'react-icons/bs';
 // import { useRouter } from 'next/router';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
@@ -30,6 +30,7 @@ const Navbar = () => {
   //   }
   // }, [router]);
 
+  const {dark,setDark} = props
   const handleNav = () => {
     setNav(!nav);
   };
@@ -56,7 +57,13 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <div>omg</div>
+          <div 
+          onClick={() => setDark(prev => !prev)}
+          className='text-2xl p-2 text-[#5651e5]'>{
+            dark ? <BsMoonStarsFill/> :
+            <BsMoonStars/>
+            }
+          </div>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
