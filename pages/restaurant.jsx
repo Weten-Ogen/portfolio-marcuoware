@@ -33,13 +33,15 @@ const restaurant = () => {
            
           </p>
           <Link
-            href='https://twitch-nextjs-tailwind.vercel.app/'
+            href='https://react-restaurant-app-two.vercel.app/'
+            target='_blank'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           </Link>
           <Link
-            href='https://github.com/fireclint/twitch-nextjs-tailwind'
-            
+            href='https://github.com/Weten-Ogen/react-restaurant-app'
+            target='_blank'
+            referrerPolicy='no-referrer'
           >
             <button className='px-8 py-2 mt-4'>Code</button>
           </Link>

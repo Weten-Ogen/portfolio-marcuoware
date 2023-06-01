@@ -34,13 +34,15 @@ const sneakers = () => {
             package.I built this UI with mockUp  from Frontend Mentor.This project also showcase how i used the mock up design to implement my site.
           </p>
           <Link
-            href='https://github.com/fireclint/crypto-react-firebase'
+            href='https://github.com/Weten-Ogen/sneakers-ecommerce'
+            target='_blank'
             
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </Link>
           <Link
-            href='https://cryptobase-yt.web.app/'
+            href='https://sneakers-ecommerce-kappa.vercel.app/'
+            target="_blank"
            
           >
             <button className='px-8 py-2 mt-4'>Demo</button>

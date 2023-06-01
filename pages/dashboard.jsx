@@ -30,14 +30,16 @@ const dashboard = () => {
             This app was built using React JS and is hosted on vercel. It uses dummy data and it visuals how stocks data are integrated into web applications. 
           </p>
           <Link
-            href='https://github.com/fireclint/property-finder'
+            href='https://github.com/Weten-Ogen/next-dashboard'
+            target="_blank"
             
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </Link>
           <Link
-            href='https://property-finder-development.web.app/'
-           
+            href='https://next-dashboard-app.vercel.app/'
+            target="_blank"
+
           >
             <button className='px-8 py-2 mt-4'>Demo</button>
           </Link>
