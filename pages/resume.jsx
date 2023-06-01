@@ -22,12 +22,14 @@ const resume = () => {
           <div className='flex'>
             <Link
               href='https://www.linkedin.com/in/marcus-oware/'
+              target='_blank'
               
             >
               <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
             </Link>
             <Link
               href='https://github.com/Weten-Ogen'
+              target='_blank'
              
             >
               <FaGithub size={20} style={{ marginRight: '1rem' }} />
@@ -92,27 +94,26 @@ const resume = () => {
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-            INFINITE TECH
+            Socio 
             </span>
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
+          <p className='py-1 italic'>Front End Web Developer & Web Master (2023)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Ensured comprehensive mobile responsive UI layouts with
               understanding of HTML, CSS, and JavaScript.
             </li>
             <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
+              Troubleshoot issues and concerns, configure operation and analytic plugins, and design changes as needed.
             </li>
             <li>
               Worked directly with a diverse client base to understand and
               implement multiple technologies and programs.
             </li>
             <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
+              Worked with integrating the frontend with the Movies Database.
             </li>
+            
           </ul>
         </div>
 
@@ -121,10 +122,10 @@ const resume = () => {
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-            INFINITE TECH
+            Salena's Restaurant | Freelancer
             </span>
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
+          <p className='py-1 italic'>Front End Web Developer & Web Master (2023)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Ensured comprehensive mobile responsive UI layouts with
@@ -151,10 +152,10 @@ const resume = () => {
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-            INFINITE TECH
+            
             </span>
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2013 - Current)</p>
+          <p className='py-1 italic'>Front End Web Developer & Web Master (2022)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Ensured comprehensive mobile responsive UI layouts with

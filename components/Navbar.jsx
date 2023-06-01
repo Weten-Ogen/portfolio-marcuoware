@@ -59,10 +59,7 @@ const Navbar = (props) => {
         <Link href='/'>
           <div 
           onClick={() => setDark(prev => !prev)}
-          className='text-2xl p-2 text-[#5651e5]'>{
-            dark ? <BsMoonStarsFill/> :
-            <BsMoonStars/>
-            }
+          className='text-2xl p-2 text-[#5651e5]'>
           </div>
         </Link>
         <div>
