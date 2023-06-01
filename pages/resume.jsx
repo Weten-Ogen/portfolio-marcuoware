@@ -88,16 +88,16 @@ const resume = () => {
         </div>
 
         <h5 className='text-center underline text-[18px] py-4'>
-          Professional Experience
+           Experience
         </h5>
         {/* Experience */}
         <div className='py-6'>
           <p className='italic'>
             <span className='font-bold italic'>
-            Socio 
+            Socio
             </span>
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2023)</p>
+          <p className='py-1 italic'>Front End Web Developer  (2023)</p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Ensured comprehensive mobile responsive UI layouts with
@@ -125,7 +125,7 @@ const resume = () => {
             Salena's Restaurant | Freelancer
             </span>
           </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2023)</p>
+          <p className='py-1 italic'>Front End Web Developer </p>
           <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
             <li>
               Ensured comprehensive mobile responsive UI layouts with
@@ -148,33 +148,7 @@ const resume = () => {
 
 
         
-        {/* Experience */}
-        <div className='py-6'>
-          <p className='italic'>
-            <span className='font-bold italic'>
-            
-            </span>
-          </p>
-          <p className='py-1 italic'>Front End Web Developer & Web Master (2022)</p>
-          <ul className='list-disc list-outside px-7 py-1 leading-relaxed'>
-            <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
-            </li>
-            <li>
-              Troubleshoot issues and concerns, configure operation and analytic
-              plugins, and design changes as needed.
-            </li>
-            <li>
-              Worked directly with a diverse client base to understand and
-              implement multiple technologies and programs.
-            </li>
-            <li>
-              Platform migration managing DNS servers as well as MX records and
-              ensuring a smooth migration process.
-            </li>
-          </ul>
-        </div>
+       
 
 
         {/* Personal Experience */}
