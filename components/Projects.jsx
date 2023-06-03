@@ -3,8 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import dashboardImg from '../public/assets/projects/dashboard.png';
 import socioImg from '../public/assets/projects/socio.png'
-import sneakersImg from '../public/assets/projects/sneakers.png'
-import restaurant from '../public/assets/projects/restaurant.png'
+
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -27,21 +26,8 @@ const Projects = () => {
             backgroundImg={socioImg}
             projectUrl='/socio'
             tech='React Js'
-
           />
-          <ProjectItem
-            title='Restaurant app'
-            backgroundImg={restaurant}
-            projectUrl='/restaurant'
-            tech='React JS'
-
-          />
-          <ProjectItem
-            title='Sneakers'
-            backgroundImg={sneakersImg}
-            projectUrl='/sneakers'
-            tech='React JS'
-          />
+          
         </div>
       </div>
     </div>

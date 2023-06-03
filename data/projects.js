@@ -5,7 +5,6 @@ export const projectsData=[
         "stack":'react,firebase,tailwind',
         "image":'/assets/projects/socio.png',
     },
-    
     {
         "id":'2',
         "title":'next-dashboard',
