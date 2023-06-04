@@ -74,9 +74,6 @@ const Navbar = (props) => {
               <Link href='/#skills'>Skills</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
-              <Link href='/resume'>Resume</Link>
-            </li>
-            <li className='ml-10 text-sm uppercase hover:border-b'>
               <Link href='/#about'>About</Link>
             </li>
             <li className='ml-10 text-sm uppercase hover:border-b'>
@@ -142,11 +139,7 @@ const Navbar = (props) => {
                   Skills
                 </li>
               </Link>
-              <Link href='/resume'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Resume
-                </li>
-              </Link>
+          
               <Link href='/#about'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   About
