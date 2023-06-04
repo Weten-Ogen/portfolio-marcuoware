@@ -27,7 +27,7 @@ const dashboard = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This appplication was built using REACT.JS and is styled with
+            This appplication was built using REACT.JS,Chart-js2 and is styled with
             Tailwind CSS. The application is hosted statically using Vercel.
             This is a mobile responsive website and renders extremely well on all screen sizes.
            
@@ -60,6 +60,11 @@ const dashboard = () => {
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Javascript
               </p>
+              <p className='text-gray-600 py-2 flex items-center'>
+                <RiRadioButtonFill className='pr-1' /> 
+                Chart-Js2
+              </p>
+  
             </div>
           </div>
         </div>
