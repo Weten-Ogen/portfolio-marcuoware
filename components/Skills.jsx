@@ -3,6 +3,8 @@ import React from 'react';
 import Html from '../public/assets/skills/html.png';
 import Css from '../public/assets/skills/css.png';
 import Javascript from '../public/assets/skills/javascript.png';
+import Google from '../public/assets/skills/google-cloud.png';
+import Redux from '../public/assets/skills/redux.png'
 import ReactImg from '../public/assets/skills/react.png';
 import Tailwind from '../public/assets/skills/tailwind.png';
 import Python from '../public/assets/skills/python.png';
@@ -12,6 +14,7 @@ import Node from '../public/assets/skills/node.png';
 import Github from '../public/assets/skills/github1.png';
 import Firebase from '../public/assets/skills/firebase.png';
 import NextJS from '../public/assets/skills/nextjs.png'
+import { GOOGLE_FONT_PROVIDER } from 'next/dist/shared/lib/constants';
 
 const Skills = () => {
   return (
@@ -81,6 +84,18 @@ const Skills = () => {
               </div>
             </div>
 
+            <div className=' sm:max-w-[200px]  p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <div className='m-auto'>
+                  <Image src={Redux} width='34px' height='34px' alt='/' />
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3>redux</h3>
+                </div>
+              </div>
+            </div>
+
+
             <div className=' sm:max-w-[200px] p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                 <div className='m-auto'>
@@ -111,6 +126,16 @@ const Skills = () => {
               </div>
             </div>
 
+            <div className=' sm:max-w-[200px]  p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+              <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                <div className='m-auto'>
+                  <Image src={Google} width='34px' height='34px' alt='/' />
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3>Google Cloud</h3>
+                </div>
+              </div>
+            </div>
 
             <div className=' sm:max-w-[200px] p-4 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
               <div className='grid grid-cols-2 gap-4 justify-center items-center'>
@@ -133,7 +158,7 @@ const Skills = () => {
 
           {/* Fullstack */}
           <div className='gap-3 my-4 max-w-[1240px]'>
-          <p className='uppercase tracking-widest text-center lg:text-left text-2xl '> others</p>
+          <p className='uppercase tracking-widest text-center lg:text-left text-2xl '>fullstack / others</p>
             <section className='flex flex-wrap  gap-4'>
 
                
