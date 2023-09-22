@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import dashboardImg from '../public/assets/projects/dashboard.png';
 import socioImg from '../public/assets/projects/socio.png'
-
+import nirvanaImg from '../public/assets/projects/nirvana.png'
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -26,6 +26,12 @@ const Projects = () => {
             backgroundImg={socioImg}
             projectUrl='/socio'
             tech='React Js'
+          />
+          <ProjectItem
+            title='Nirvana'
+            backgroundImg={nirvanaImg}
+            projectUrl='/nirvana'
+            tech='Next Js |Typescript'
           />
           
         </div>
